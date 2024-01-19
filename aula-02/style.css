@@ -1,0 +1,93 @@
+body,
+h1 {
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #232323;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid yellow;
+    /* padding: 10px; */
+}
+
+h1 {
+    color: blue;
+}
+
+h1 {
+    color: green !important;
+}
+
+header {
+  text-align: center;
+  background: peru;
+  padding: 10px 0;
+  font-family: "Times New Roman";
+}
+
+img {
+  width: 100px;
+}
+
+menu {
+  width: calc(181px * 3);
+  margin: 10px auto;
+  padding: 0;
+}
+
+menu li {
+  display: inline-block;
+  background-color: black;
+  color: yellow;
+  width: 156px;
+  padding: 8px;
+  list-style: none;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+menu li:hover {
+    background-color: transparent;
+    border-style: dotted;
+    color: black;
+}
+
+h1 {
+    color: red;
+}
+
+.item-comprado {
+    text-decoration: line-through;
+}
+
+.promocao {
+    color:crimson;
+}
+
+.item-comprado.promocao {
+    color: greenyellow;
+}
+
+#item-favorito {
+    text-transform: uppercase;
+}
+
+#item-favorito.item-comprado{
+    font-weight: 900;
+}
+
+input {
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    box-sizing: border-box;
+}
