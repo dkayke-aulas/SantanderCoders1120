@@ -1,0 +1,57 @@
+* { color: white; }
+main {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  background-color: darkblue;
+}
+
+body {
+    height: 300vh;
+}
+
+section {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  top: 100px;
+  left: 100px;
+  background-color: blueviolet;
+}
+
+div {
+  /* position: absolute; */
+  height: 1500px;
+  top: 100px;
+  right: 100px;
+  bottom: 100px;
+  background-color: yellowgreen;
+}
+
+.contato {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: darkgreen;
+}
+
+.chiclete {
+    position: sticky;
+    top: 100px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: salmon;
+}
+
+.chiclete2 {
+    position: sticky;
+    bottom: 100px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: crimson;
+}
