@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 02 2</title>
+    <link rel="stylesheet" href="./style.2.css">
+    <style>
+        /* pega o 5º elemento filho SE ele for um P */
+        p:nth-child(5) {
+            background-color: aqua;
+        }
+
+        /* pega o primeiro filho se ele for um H1 */
+        h1:first-child {
+            background-color: yellow;
+        }
+        
+        /* pega o ultimo filho se for um P */
+        p:last-child {
+            background-color: red;
+        }
+
+        /* pega o terceiro parágrafo do mesmo nível */
+        p:nth-of-type(3) {
+            background-color: chocolate;
+        }
+
+        section div:nth-child(1) h4:first-child {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>H1</h1>
+        <p>elemento p 1</p>
+        <p>elemento p 2</p>
+        <p>elemento p 2</p>
+        <h3>elemento h3</h3>
+        <p>elemento p 3</p>
+        <p>elemento p 4</p>
+        <p>elemento p 5</p>
+    </div>
+    <hr>
+    <section>
+        <div>
+            <h4>h4</h4>
+            <h4>h4</h4>
+        </div>
+        <div>
+            <h4>h4</h4>
+            <h4>h4</h4>
+        </div>
+    </section>
+</body>
+</html>

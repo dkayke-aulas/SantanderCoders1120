@@ -1,0 +1,56 @@
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+h1 {
+    font-size: 1rem;
+    background-color: #333;
+    color: yellowgreen
+}
+
+#identificador {
+    color: blue;
+}
+
+.banana-classe {
+    color: orangered;
+}
+
+.melancia-classe {
+    font-weight: bold;
+}
+
+#uva.jorge {
+    color: purple;
+    text-decoration: line-through;
+}
+
+/* todo parágrafo dentro de uma div em qualquer nível */
+div p {
+    display: inline-block;
+    font-weight: bold;
+}
+
+div .span-legal {
+    background: #ccc;
+}
+
+div span p {
+    border: 1px solid tomato;
+}
+
+section > p {
+    color: royalblue;
+}
+
+div + h2 {
+    color: peru;
+}
+
+aside ~ h2 {
+    color: cyan;
+}
+

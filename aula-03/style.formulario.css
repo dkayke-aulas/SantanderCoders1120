@@ -1,0 +1,16 @@
+form label {
+    display: inline-block;
+}
+
+form input:not([type='radio'], [type='checkbox']) {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+fieldset {
+    margin-bottom: 10px;
+}
+
+button[type='submit'] {
+    background-color: cornflowerblue;
+}

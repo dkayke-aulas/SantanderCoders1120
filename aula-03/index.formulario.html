@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aula 2 - Formulário</title>
+    <link rel="stylesheet" href="./style.formulario.css" />
+  </head>
+  <body>
+    <form method="post" action="https://www.w3schools.com/action_page.php">
+      <h2>Cadastre-se para trabalhar com a BananaTech!</h2>
+
+      <fieldset>
+        <legend>Dados pessoais</legend>
+
+        <label for="nome-completo">Nome completo</label>
+        <input type="text" id="nome-completo" name="nome-completo" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" pattern="[0-9]{2} [0-9]{4}-[0-9]{4}" placeholder="00 1234-1234" name="telefone" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Formação & Experiência</legend>
+        <select name="formacao">
+          <option disabled selected hidden>Selecione a formação</option>
+          <option value="fundamental">Ensino fundamental</option>
+          <option value="medio">Ensino médio</option>
+          <option value="tecnico">Ensino médio-técnico</option>
+          <option value="superior">Ensino superior</option>
+          <option value="pos">Ensino pós superior</option>
+        </select>
+
+        <div>
+          <input type="radio" id="0-1" value="0-1" name="experiencia" />
+          <label for="0-1">0 a 1 ano</label>
+        </div>
+
+        <div>
+          <input type="radio" id="1-3" value="1-3" name="experiencia" />
+          <label for="1-3">1 a 3 anos</label>
+        </div>
+
+        <div>
+          <input type="radio" id="4-8" value="4-8" name="experiencia" />
+          <label for="4-8">4 a 8 anos</label>
+        </div>
+
+        <div>
+          <input type="radio" id="8-inf" value="8-inf" name="experiencia" />
+          <label for="8-inf">8 a vida toda</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Hobbies</legend>
+        <div>
+          <input type="checkbox" value="correr" id="correr" name="hobbies" />
+          <label for="correr">Correr</label>
+        </div>
+        <div>
+          <input type="checkbox" value="ler" id="ler" name="hobbies" />
+          <label for="ler">Ler</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            value="bicho"
+            id="jogar-bicho"
+            checked
+            name="hobbies"
+          />
+          <label for="jogar-bicho">Jogar no bicho</label>
+        </div>
+        <div>
+          <input type="checkbox" value="bbb" id="bbb" name="hobbies" />
+          <label for="bbb">Assistir BBB</label>
+        </div>
+        <div>
+          <input type="checkbox" value="tigre" id="tigrinho" name="hobbies" />
+          <label for="tigrinho">Jogar no tigrinho</label>
+        </div>
+      </fieldset>
+
+      <button type="reset">Limpar</button>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
