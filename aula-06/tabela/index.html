@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aula 06</title>
+    <style>
+      table {
+        width: 100%;
+        border: 1px solid blueviolet;
+      }
+
+      thead,
+      th,
+      td {
+        border: 1px solid blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Total de produtos vendidos
+      </caption>
+
+      <thead>
+        <tr>
+          <th colspan="2">Data</th>
+          <th>Janeiro</th>
+          <th>Fevereiro</th>
+          <th>Março</th>
+          <th>Total geral</th>
+        </tr>
+
+        <tr>
+          <th>Categoria</th>
+          <th>Produto</th>
+          <th colspan="3">Quantidade vendido</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="3">Esportivo</td>
+          <td>Bicicleta</td>
+          <td>20</td>
+          <td>15</td>
+          <td>10</td>
+          <td>45</td>
+        </tr>
+        <tr>
+          <td>Scooter</td>
+          <td>30</td>
+          <td>25</td>
+          <td>10</td>
+          <td>65</td>
+        </tr>
+        <tr>
+          <td>Skate</td>
+          <td>40</td>
+          <td>10</td>
+          <td>5</td>
+          <td>55</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+            <td colspan="2">Total vendido</td>
+            <td>90</td>
+            <td>50</td>
+            <td>25</td>
+            <td>165</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

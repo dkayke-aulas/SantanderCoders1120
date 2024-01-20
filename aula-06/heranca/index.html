@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Herança</title>
+    <style>
+        span {
+            color: green;
+            border: 1px solid orange;
+        }
+
+        p:nth-child(3) span {
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <p>Até o HTML é <span>herdeiro</span> e eu não!</p>
+
+    <p style="color: crimson;">Até o HTML é <span>herdeiro</span> e eu não!</p>
+    
+    <p style="color: peru;">Até o HTML é <span>herdeiro</span> e eu não!</p>
+</body>
+</html>

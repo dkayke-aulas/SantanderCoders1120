@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Imagens</title>
+    <!-- <link rel="stylesheet" href="./reset.css"> -->
+    <style>
+      :root {
+        --quantidade-colunas: 4;
+        --quantidade-colunas-750: 3;
+        --altura-imagem: 100px;
+      }
+
+      img {
+        max-width: 100%;
+        border-radius: 4px;
+        box-shadow: 1px 1px 1px #333;
+        filter: grayscale(100%);
+      }
+
+      img:hover {
+        transform: scale(1.05);
+        filter: grayscale(0%);
+      }
+
+      header h1 {
+        text-align: center;
+      }
+
+      section {
+        column-count: var(--quantidade-colunas);
+        column-gap: 10px;
+        max-width: 1000px;
+        margin: 0 auto;
+        /* column-rule: 2px solid red; */
+        /* column-width: 40vw; */
+      }
+
+      /* media queries */
+      @media all and (max-width: 750px) {
+        :root {
+            --quantidade-colunas: 3;
+        }
+      }
+      
+      @media all and (max-width: 400px) {
+        :root {
+            --quantidade-colunas: 1;
+        }
+      }
+      
+      @media print  {
+        :root {
+            --quantidade-colunas: 1;
+        }
+
+        img {
+            height: 400px;
+        }
+
+        header {
+            display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Minha Galeria</h1>
+    </header>
+
+    <section>
+      <img
+        src="https://source.unsplash.com/random/?Fruit"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Animal"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Colors"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Object"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Music"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Sport"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Art"
+        alt="fruta aleatoria"
+      />
+
+      <img
+        src="https://source.unsplash.com/random/?Fruit&2"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Animal&2"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Colors&2"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Object&2"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Music&2"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Sport&2"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Art&2"
+        alt="fruta aleatoria"
+      />
+
+      <img
+        src="https://source.unsplash.com/random/?Fruit&3"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Animal&3"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Colors&3"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Object&3"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Music&3"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Sport&3"
+        alt="fruta aleatoria"
+      />
+      <img
+        src="https://source.unsplash.com/random/?Art&3"
+        alt="fruta aleatoria"
+      />
+    </section>
+  </body>
+</html>
