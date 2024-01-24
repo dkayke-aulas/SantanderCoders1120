@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title>Herança</title>
     <style>
+        .banana {
+            display: block;
+        }
+
+        p {
+            display: inherit;
+        }
+
         span {
             color: green;
             border: 1px solid orange;
@@ -15,10 +23,12 @@
     </style>
 </head>
 <body>
-    <p>Até o HTML é <span>herdeiro</span> e eu não!</p>
-
-    <p style="color: crimson;">Até o HTML é <span>herdeiro</span> e eu não!</p>
-    
-    <p style="color: peru;">Até o HTML é <span>herdeiro</span> e eu não!</p>
+    <div class="banana">
+        <p>Até o HTML é <span>herdeiro</span> e eu não!</p>
+        
+        <p style="color: crimson;">Até o HTML é <span>herdeiro</span> e eu não!</p>
+        
+        <p style="color: peru;">Até o HTML é <span>herdeiro</span> e eu não!</p>
+    </div>
 </body>
 </html>

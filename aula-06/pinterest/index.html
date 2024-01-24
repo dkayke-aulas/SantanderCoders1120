@@ -19,6 +19,8 @@
       }
 
       img:hover {
+        position: relative;
+        z-index: 1;
         transform: scale(1.05);
         filter: grayscale(0%);
       }
@@ -39,27 +41,27 @@
       /* media queries */
       @media all and (max-width: 750px) {
         :root {
-            --quantidade-colunas: 3;
+          --quantidade-colunas: 3;
         }
       }
-      
+
       @media all and (max-width: 400px) {
         :root {
-            --quantidade-colunas: 1;
+          --quantidade-colunas: 1;
         }
       }
-      
-      @media print  {
+
+      @media print {
         :root {
-            --quantidade-colunas: 1;
+          --quantidade-colunas: 1;
         }
 
         img {
-            height: 400px;
+          height: 400px;
         }
 
         header {
-            display: none;
+          display: none;
         }
       }
     </style>
