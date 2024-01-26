@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      form {
+        border: 2px solid cornflowerblue;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 20px;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 4px;
+      }
+
+      form span {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .box-auxiliar {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .box-lembrar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      a {
+        color: cornflowerblue
+      }
+      
+      a:hover {
+        color: crimson
+      }
+
+      a:active {
+        color: orangered
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <span>
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" />
+      </span>
+
+      <span>
+        <label for="senha">Senha</label>
+        <input type="hidden" />
+        <input type="password" id="senha" />
+      </span>
+
+      <span>
+        <button>Entrar</button>
+      </span>
+
+      <div class="box-auxiliar">
+        <div class="box-lembrar">
+          <input type="checkbox" id="lembrar" />
+          <label for="lembrar">Lembrar minha senha</label>
+        </div>
+        <a href="#">Esqueci minha senha</a>
+      </div>
+    </form>
+  </body>
+</html>

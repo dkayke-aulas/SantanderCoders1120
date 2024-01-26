@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            border: 1px solid cornflowerblue;
+            display: flex;
+            width: 900px;
+            height: 400px;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        div {
+            border: 1px solid orangered;
+        }
+
+        div:nth-child(1) { 
+            min-height: 30px !important;
+            background-color: aquamarine;
+            padding-top: 15px;
+        }
+        div:nth-child(2) { min-height: 50px !important ;}
+        div:nth-child(3) { min-height: 45px !important ;}
+        div:nth-child(4) { min-height: 100px !important ;}
+    </style>
+</head>
+<body>
+
+    <section>
+        <div>alguma banana</div>
+        <div>banana é uma fruta banana banana</div>
+        <div>meu pastel é gostoso</div>
+        <div>é isso</div>
+    </section>
+
+</body>
+</html>

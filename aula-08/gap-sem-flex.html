@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gap</title>
+  <style>
+    section {
+      position: relative;
+      border: 3px solid cornflowerblue;
+    }
+
+    div {
+      border: 1px solid red;
+      height: 50px;
+    }
+    
+    div:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    .posicao {
+      position: absolute;
+      background: crimson;
+      top: 1rem;
+      left: 1rem;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <section>
+    <div>banana</div>
+    <div>banana</div>
+    <div>banana</div>
+    <div>banana</div>
+    <div class="posicao">banana</div>
+    <div>banana</div>
+    <div>banana</div>
+  </section>
+<br>
+  <section>
+    <div>banana</div>
+    <p>banana</p>
+  </section>
+
+</body>
+</html>
